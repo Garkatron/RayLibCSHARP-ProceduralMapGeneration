@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows10.0.26100.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <StartupObject>Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="resources\textures\tools\pickaxe.png" />
+    <None Remove="resources\textures\weapons\gun.png" />
+    <None Remove="resources\textures\world\cave.png" />
+    <None Remove="resources\textures\world\city.png" />
+    <None Remove="resources\textures\world\dirth.png" />
+    <None Remove="resources\textures\world\grass.png" />
+    <None Remove="resources\textures\world\long_grass.png" />
+    <None Remove="resources\textures\world\pebble.png" />
+    <None Remove="resources\textures\world\player.png" />
+    <None Remove="resources\textures\world\short_grass.png" />
+    <None Remove="resources\textures\world\stone.png" />
+    <None Remove="resources\textures\world\stone_floor.png" />
+    <None Remove="resources\textures\world\water.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="resources\textures\tools\pickaxe.png" />
+    <EmbeddedResource Include="resources\textures\weapons\gun.png" />
+    <EmbeddedResource Include="resources\textures\world\cave.png" />
+    <EmbeddedResource Include="resources\textures\world\city.png" />
+    <EmbeddedResource Include="resources\textures\world\dirth.png" />
+    <EmbeddedResource Include="resources\textures\world\grass.png" />
+    <EmbeddedResource Include="resources\textures\world\long_grass.png" />
+    <EmbeddedResource Include="resources\textures\world\pebble.png" />
+    <EmbeddedResource Include="resources\textures\world\player.png" />
+    <EmbeddedResource Include="resources\textures\world\short_grass.png" />
+    <EmbeddedResource Include="resources\textures\world\stone.png" />
+    <EmbeddedResource Include="resources\textures\world\stone_floor.png" />
+    <EmbeddedResource Include="resources\textures\world\water.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Raylib-cs" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
